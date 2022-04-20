@@ -11,6 +11,8 @@
 		E4A2517B280E396F00E2DA18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2517A280E396F00E2DA18 /* ContentView.swift */; };
 		E4A2517D280E397100E2DA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A2517C280E397100E2DA18 /* Assets.xcassets */; };
 		E4A25180280E397100E2DA18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A2517F280E397100E2DA18 /* Preview Assets.xcassets */; };
+		E4A25187280E41DA00E2DA18 /* SpiderGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A25186280E41D900E2DA18 /* SpiderGraph.swift */; };
+		E4A2518A280E456600E2DA18 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E4A25189280E456600E2DA18 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		E4A2517A280E396F00E2DA18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4A2517C280E397100E2DA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A2517F280E397100E2DA18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4A25186280E41D900E2DA18 /* SpiderGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A2518A280E456600E2DA18 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A25178280E396F00E2DA18 /* NewStatisticsApp.swift */,
+				E4A25186280E41D900E2DA18 /* SpiderGraph.swift */,
 				E4A2517A280E396F00E2DA18 /* ContentView.swift */,
 				E4A2517C280E397100E2DA18 /* Assets.xcassets */,
 				E4A2517E280E397100E2DA18 /* Preview Content */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = NewStatistics;
+			packageProductDependencies = (
+				E4A25189280E456600E2DA18 /* SwiftUICharts */,
+			);
 			productName = NewStatistics;
 			productReference = E4A25175280E396F00E2DA18 /* NewStatistics.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = E4A2516C280E396E00E2DA18;
+			packageReferences = (
+				E4A25188280E456600E2DA18 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = E4A25176280E396F00E2DA18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A2517B280E396F00E2DA18 /* ContentView.swift in Sources */,
+				E4A25187280E41DA00E2DA18 /* SpiderGraph.swift in Sources */,
 				E4A25179280E396F00E2DA18 /* NewStatisticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4A25188280E456600E2DA18 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4A25189280E456600E2DA18 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A25188280E456600E2DA18 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4A2516D280E396E00E2DA18 /* Project object */;
 }
